@@ -1,0 +1,6 @@
+<launch>
+<arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+<param name="model" value="$(arg model)"/>
+<node pkg="ros_first_pkg" type="turtlebot3_controller" name="wall_follower_node" output="screen">
+</node>
+</launch>
